@@ -1,0 +1,17 @@
+rules:
+- apiGroups: [""]
+  apiVersions: ["v1"]
+  resources: ["pods"]
+  operations: ["CREATE"]
+mutating: false
+contextAware: false
+executionMode: kubewarden-wapc
+annotations:
+  io.kubewarden.policy.title: disallow-palindrome-labels
+  io.kubewarden.policy.description: Disallow palindromes in labels
+  io.kubewarden.policy.author: Zackary Troop <zack.tro@gmail.com>
+  io.kubewarden.policy.url: https://github.com/ztroop/disallow-palindrome-labels
+  io.kubewarden.policy.source: https://github.com/ztroop/disallow-palindrome-labels
+  io.kubewarden.policy.license: MIT
+  io.kubewarden.policy.usage: |
+    Disallow the creation of resources that have one or more labels with a palindrome key.

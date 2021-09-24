@@ -1,0 +1,14 @@
+name: disallow-palindrome-labels
+description: Disallow palindromes in labels
+homepage: https://github.com/ztroop/disallow-palindrome-labels
+author:
+  name: Zackary Troop <zack.tro@gmail.com>
+  homepage: https://github.com/ztroop
+download:
+  registry: ghcr.io/kubewarden/policies/disallow-palindrome-labels:__TAG__
+keywords:
+  - Pod
+resources:
+  - Pod
+mutation: false
+contextAware: false
